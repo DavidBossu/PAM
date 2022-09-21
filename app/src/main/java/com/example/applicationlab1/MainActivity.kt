@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         val button = findViewById<Button>(R.id.buttonid)
         val textin = findViewById<EditText>(R.id.textid)
-        val resoult = findViewById<TextView>(R.id.rezultid)
+        val resoultt = findViewById<TextView>(R.id.rezultid)
 
         button.setOnClickListener{
             var resoult = 0
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
                     resoult++
                 }
             }
-            resoult.text = "Litera 'a' este in ".plus(resoult).plus(" cuvinte")
+            resoultt.text = "Litera 'a' este in ".plus(resoult).plus(" cuvinte")
         }
     }
 }
