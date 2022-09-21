@@ -11,20 +11,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val detBtn = findViewById<Button>(R.id.buttonid)
-        val textul = findViewById<EditText>(R.id.textid)
-        val rezult = findViewById<TextView>(R.id.rezultid)
+        val button = findViewById<Button>(R.id.buttonid)
+        val textin = findViewById<EditText>(R.id.textid)
+        val resoult = findViewById<TextView>(R.id.rezultid)
 
-        detBtn.setOnClickListener{
+        button.setOnClickListener{
             var resoult = 0
-            val text = textul.text.toString()
+            val text = textin.text.toString()
             val list: List<String> = text.split(" ").toList()
             for (l in list){
                 if ("a" in l || "A" in l){
                     resoult++
                 }
             }
-            rezult.text = "Litera 'a' este in ".plus(resoult).plus(" cuvinte")
+            resoult.text = "Litera 'a' este in ".plus(resoult).plus(" cuvinte")
         }
     }
 }
